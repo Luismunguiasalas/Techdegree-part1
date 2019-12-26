@@ -1,3 +1,75 @@
+@import "normalize.css";  /* importing normalize file*/
+
+/* 
+    css for header and footer fixed position
+*/
 body {
+    overflow: hidden;
+}
+
+html,
+body,
+.main-container {
+    height: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+    start of header styling
+*/
+header {
+    display: flex;
     background-color: antiquewhite;
+    justify-content: space-between;
+    border: chocolate solid 2px;
+}
+
+header div,
+header ul {
+    /* margin-top: auto; */
+    border: chocolate solid 2px;
+}
+
+/* styling for links list */
+header ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+/* 
+    header logo styling
+*/
+
+.logo {
+    width: 50%;
+}
+
+
+
+/* 
+    main content styling
+*/
+main {
+    background-color: aqua;
+    flex: 1;
+    position: relative;
+    overflow-y: auto;
+}
+
+/* 
+    footer content styling
+*/
+
+footer {
+    background-color: azure;
 }
