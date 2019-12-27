@@ -5,6 +5,7 @@
 **************************************/
 body {
     overflow: hidden;
+    font-family: 'Inria Serif', serif;
 }
 
 html,
@@ -41,18 +42,18 @@ header ul {
 /******* styling for links list ********/
 .navlinks {
     display: flex;
-    width: 30%;
+    width: 40%;
     justify-content: space-evenly;
     list-style: none;
     /* border: chocolate solid 2px; */
 }
 
-.navlinks li:nth-child(1),
+/* .navlinks li:nth-child(1),
 .navlinks li:nth-child(2) {
     padding-right: 1.4rem;
-    /* padding-left: -.5rem; */
-    border-right: 1px solid lightslategray;
-}
+    padding-left: -.5rem;
+    border-right: 3px solid rgb(149, 243, 9);
+} */
 
 .navlinks a {
     color: black;
@@ -62,10 +63,9 @@ header ul {
 }
 
 .navlinks a:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid greenyellow;
     
 }
-
 
 
 /************************************** 
@@ -82,7 +82,7 @@ header ul {
 .logo a {
     margin: auto;
     text-decoration: none;
-    color: black;
+    color: greenyellow;
     /* border: chocolate solid 2px; */
 }
 .logo a i {
@@ -90,16 +90,74 @@ header ul {
     /* margin: auto ; */
 }
 
-
-
 /************************************** 
     main content styling
 **************************************/
 main {
-    background-color: lightgray;
+    /* margin-top: 1000px; */
+    width: 90%;
+    /* background-color: lightgray; */
     flex: 1;
     position: relative;
     overflow-y: auto;
+    margin: auto
+}
+
+.background-img {
+    /* margin-top: -5rem; */
+    border: black solid 1px;
+    width: 100%;
+    height: auto;
+    /* margin-top: 10rem; */
+    /* height: 100%; */
+    background-size: cover;
+    /* height: 500px; */
+    /* z-index: 0; */
+    background-repeat: no-repeat;
+    background-image: url("https://i.ibb.co/gz8Z3X6/rsz-1rsz-1rsz-outer-space-stars-l.png");
+    /* background-repeat:  ; */
+    /* background-image: url("https://i.ibb.co/hfFkHcg/rsz-f3eb5322-82e5-4751-9370-55607aaaef29hw5.jpg"); */
+    /* background-image:  ("https://i.ibb.co/1nKd2D3/rsz-11-great-flexible-jobs-in-seattle-washington-hiring-now-1024x503.jpg" alt"seattle"); */
+}
+
+.profile-img img {
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+    height: 12rem;
+    width: 12rem;
+    border: greenyellow solid 2px;
+    border-radius: 7rem;
+}
+
+.background-img h1 {
+    color: greenyellow;
+    text-align: center;
+    /* border: chocolate solid 2px; */
+}
+
+/************************************* 
+    About me container styling
+*************************************/
+
+.about-container {
+    display: flex;
+    /* border: solid 2px black; */
+    justify-content: space-between;
+}
+
+.about-me {
+    width: 65%;
+    border-right: solid 1px greenyellow;
+    /* margin-left: .5rem; */
+    /* border: black solid 1px; */
+}
+
+
+.hobbies {
+    width: 25%;
+    margin-right: 3rem;
+    /* border: black solid 1px; */
 }
 
 /************************************* 
@@ -108,7 +166,7 @@ main {
 
 footer {
     display: flex;
-    background-color: azure;
+    /* background-color: azure; */
     justify-content: space-between;
 }
 
@@ -123,4 +181,8 @@ footer ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
+}
+
+footer li:nth-child(3){
+    color: greenyellow;
 }
