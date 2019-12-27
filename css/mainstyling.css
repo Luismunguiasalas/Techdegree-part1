@@ -1,8 +1,8 @@
 @import "normalize.css";  /* importing normalize file*/
 
-/* 
+/************************************** 
     css for header and footer fixed position
-*/
+**************************************/
 body {
     overflow: hidden;
 }
@@ -18,58 +18,109 @@ body,
     flex-direction: column;
 }
 
-/* 
+/************************************** 
     start of header styling
-*/
+**************************************/
 header {
     display: flex;
-    background-color: antiquewhite;
+    /* background-color: rgb(240, 240, 240); */
     justify-content: space-between;
-    border: chocolate solid 2px;
+    /* border: chocolate solid 2px; */
+    font-family: 'Inria Serif', serif;
+    font-size: 1.3rem;
+    /* box-shadow: 100rem black ; */
+    /* color: black */
 }
 
 header div,
 header ul {
-    /* margin-top: auto; */
-    border: chocolate solid 2px;
+    /******** margin-top: auto; ********/
+    /* border: chocolate solid 2px; */
 }
 
-/* styling for links list */
-header ul {
+/******* styling for links list ********/
+.navlinks {
     display: flex;
-    width: 50%;
+    width: 30%;
     justify-content: space-evenly;
     list-style: none;
+    /* border: chocolate solid 2px; */
 }
 
-header ul li a {
+.navlinks li:nth-child(1),
+.navlinks li:nth-child(2) {
+    padding-right: 1.4rem;
+    /* padding-left: -.5rem; */
+    border-right: 1px solid lightslategray;
+}
+
+.navlinks a {
+    color: black;
     text-decoration: none;
+    /* background-color: mediumaquamarine; */
+
 }
 
-/* 
+.navlinks a:hover {
+    border-bottom: 1px solid black;
+    
+}
+
+
+
+/************************************** 
     header logo styling
-*/
+**************************************/
 
 .logo {
-    width: 50%;
+    display: flex;
+    /* border: chocolate solid 2px; */
+    width: 31%;
+    justify-content: space-around;
+    
+}
+.logo a {
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    /* border: chocolate solid 2px; */
+}
+.logo a i {
+    /* border: chocolate solid 2px; */
+    /* margin: auto ; */
 }
 
 
 
-/* 
+/************************************** 
     main content styling
-*/
+**************************************/
 main {
-    background-color: aqua;
+    background-color: lightgray;
     flex: 1;
     position: relative;
     overflow-y: auto;
 }
 
-/* 
+/************************************* 
     footer content styling
-*/
+**************************************/
 
 footer {
+    display: flex;
     background-color: azure;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: auto;
+}
+
+footer ul {
+    margin-right: 15rem;
+    width: 20%;
+    /* border: chocolate solid 2px; */
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
 }
