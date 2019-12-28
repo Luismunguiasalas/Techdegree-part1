@@ -249,9 +249,23 @@ footer i[class*="fa-frog"] {
     width: 25rem;
     /* border: 1px solid black; */
     overflow: inherit;
-    box-shadow: 10px 10px 30px gray;
+    box-shadow: 15px 15px 30px gray;
     border-radius: .8rem;
+    transition-duration: .3s;
 }
+
+.card-cont > div:hover {
+    border-bottom: 3px solid greenyellow;
+    transform: scale(1.05);
+}
+
+/* .img-con a {
+    transition-duration: .4s;
+} */
+
+/* .img-con a:hover {
+    border: 1px solid greenyellow;
+} */
 
 .img-con {
     /* border: 1px solid black; */
@@ -303,12 +317,16 @@ footer i[class*="fa-frog"] {
 .contact-cont div {
     width: 45%;
 }
+/* .contact-cont u {
+    color: greenyellow;
+} */
 
 /* .section:last-child {
     margin-right: 10rem;
 } */
 
 .email-but {
+    /* margin: auto; */
     background-color: white;
     border: 2px solid greenyellow;
     /* background-color: #008CBA; Green */
@@ -316,8 +334,8 @@ footer i[class*="fa-frog"] {
     color: black;
     padding: .9rem 1.5rem;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    /* text-decoration: none; */
+    /* display: inline-block; */
     font-size: 16px;
     border-radius: .5rem;
     -webkit-transition-duration: 0.4s; /* Safari */
@@ -326,10 +344,13 @@ footer i[class*="fa-frog"] {
 
 .email-but:hover {
     background-color: greenyellow;
+    transform: scale(1.1);
+    /* transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045); */
 
 }
 
 .email-but a {
+    margin: auto;
     text-decoration: none;
     color: black;
 }
