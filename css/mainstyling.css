@@ -291,6 +291,12 @@ footer i[class*="fa-frog"] {
     text-align: center;
 }
 
+.txt-con p {
+    padding-top: .5rem;
+    margin: auto;
+    width: 90%;
+}
+
 /* .txt-con p {
     margin: auto;
     border: 1px solid black;
