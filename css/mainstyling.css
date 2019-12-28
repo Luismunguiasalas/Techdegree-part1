@@ -26,6 +26,7 @@ header {
     display: flex;
     /* background-color: rgb(240, 240, 240); */
     justify-content: space-between;
+    /* flex-wrap: wrap; */
     /* border: chocolate solid 2px; */
     font-family: 'Inria Serif', serif;
     font-size: 1.3rem;
@@ -42,6 +43,7 @@ header ul {
 /******* styling for links list ********/
 .navlinks {
     display: flex;
+    flex-wrap: wrap;
     width: 40%;
     justify-content: space-evenly;
     list-style: none;
@@ -58,13 +60,18 @@ header ul {
 .navlinks a {
     color: black;
     text-decoration: none;
+    /* transition-delay: 3s;
+    transition-timing-function: ease-in-out; */
     /* background-color: mediumaquamarine; */
 
 }
 
 .navlinks a:hover {
     border-bottom: 2px solid greenyellow;
-    
+}
+
+.navlink a:active {
+    /* transition-duration: 3s; */
 }
 
 
@@ -76,6 +83,7 @@ header ul {
     display: flex;
     /* border: chocolate solid 2px; */
     width: 31%;
+    flex-wrap: wrap;
     justify-content: space-around;
     
 }
@@ -94,6 +102,8 @@ header ul {
     main content styling
 **************************************/
 main {
+    /* display: flex; */
+    /* flex-direction: column; */
     /* margin-top: 1000px; */
     width: 90%;
     /* background-color: lightgray; */
@@ -104,13 +114,20 @@ main {
 }
 
 .background-img {
+    /* display: flex; */
+    flex-direction: row;
+    flex-flow: wrap;
     /* margin-top: -5rem; */
     border: black solid 1px;
     width: 100%;
     height: auto;
+    margin-bottom: 2.5rem;
+    /* height: 500px; */
+    /* flex-shrink: inherit; */
     /* margin-top: 10rem; */
     /* height: 100%; */
     background-size: cover;
+    /* background-size: inherit; */
     /* height: 500px; */
     /* z-index: 0; */
     background-repeat: no-repeat;
@@ -141,22 +158,34 @@ main {
 *************************************/
 
 .about-container {
+    width: 100%;
     display: flex;
     /* border: solid 2px black; */
     justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-basis: 900px; */
+    margin-top: 2.5rem;
 }
 
-.about-me {
+.about-me-section {
     width: 65%;
+    /* flex-basis: 65%; */
+    /* padding-right: -10rem; */
+    /* margin-right: -1rem; */
     border-right: solid 1px greenyellow;
     /* margin-left: .5rem; */
     /* border: black solid 1px; */
 }
 
+.text-container {
+    width:95%;
+}
+
 
 .hobbies {
-    width: 25%;
+    /* width: 25%; */
     margin-right: 3rem;
+    flex-basis:25%;
     /* border: black solid 1px; */
 }
 
@@ -183,6 +212,109 @@ footer ul {
     justify-content: space-around;
 }
 
-footer li:nth-child(3){
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer i[class*="fa-frog"] {
     color: greenyellow;
+}
+
+
+
+/************************************* 
+    Experience page styling
+**************************************/
+#experience h1 {
+    text-align: center;
+}
+
+.card-cont {
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+}
+
+.card-cont > div { 
+    /* display: flex;
+    flex-direction: column; */
+    margin-bottom: 2.5rem;
+    height: 25rem;
+    width: 25rem;
+    /* border: 1px solid black; */
+    overflow: inherit;
+    box-shadow: 10px 10px 30px gray;
+    border-radius: .8rem;
+}
+
+.one {
+    /* border: 1px solid black; */
+    /* margin: 0; */
+    height: 70%;
+    background-color: gray;
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+}
+
+.two {
+    /* border: 1px solid black; */
+    /* margin: 0; */
+    height: 29%;
+    width: 95%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+    }
+    .about-me-section {
+        width: 100%;
+
+    }
+    .text-container {
+        width: 90%;
+    }
+
+    header {
+        width: 100%;
+        margin: auto;
+        /* justify-content: center; */
+        flex-direction: column;
+        border: 1px solid black;
+    }
+
+    .navlinks {
+        margin: auto;
+        /* width: 60%; */
+        justify-content: space-evenly;
+        border: 1px solid black;
+
+    }
+    .logo {
+        display: flex;
+        /* width: 100%; */
+        margin: auto;
+        /* text-align: center; */
+        /* justify-content: space-evenly; */
+        border: 1px solid black;
+    }
+    .logo p {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navlinks {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        /* text-align: center; */
+    }
 }
