@@ -192,13 +192,13 @@ footer {
     display: flex;
     /* background-color: azure; */
     justify-content: space-around;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
 }
 
 footer p {
     /* margin: auto; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 footer ul {
@@ -209,18 +209,18 @@ footer ul {
     list-style: none;
     justify-content: space-between;
     padding: 0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 footer a {
     text-decoration: none;
     color: black;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 footer i[class*="fa-frog"] {
     color: greenyellow;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 
@@ -284,6 +284,66 @@ footer i[class*="fa-frog"] {
 } */
 
 
+/************************************* 
+    Contact page styling
+**************************************/
+
+.contact-cont {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.contact-cont div:first-child {
+    border-right: solid 1px greenyellow;
+    padding-right: 2rem;
+    /* background-color: grey; */
+}
+
+.contact-cont div {
+    width: 45%;
+}
+
+/* .section:last-child {
+    margin-right: 10rem;
+} */
+
+.email-but {
+    background-color: white;
+    border: 2px solid greenyellow;
+    /* background-color: #008CBA; Green */
+    /* border: none; */
+    color: black;
+    padding: .9rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: .5rem;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.email-but:hover {
+    background-color: greenyellow;
+
+}
+
+.email-but a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-cont:nth-last-child(1) {
+    text-align: center;
+
+}
+
+
+
+
+
+
 @media screen and (max-width: 1000px) {
     .background-img {
         background-image: none;
@@ -295,7 +355,7 @@ footer i[class*="fa-frog"] {
         justify-content: center;
     } */
     /* .about-me-section {
-        width: 100%;
+        border-right: none;
 
     } */
     /* .text-container {
@@ -307,14 +367,14 @@ footer i[class*="fa-frog"] {
         margin: auto;
         /* justify-content: center; */
         flex-direction: column;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 
     .navlinks {
         margin: auto;
         width: 100%;
         justify-content: space-evenly;
-        border: 1px solid black;
+        /* border: 1px solid black; */
 
     }
     .logo {
@@ -324,7 +384,7 @@ footer i[class*="fa-frog"] {
         margin: auto;
         /* text-align: center; */
         /* justify-content: space-evenly; */
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
     .logo p {
         text-align: center;
@@ -350,7 +410,7 @@ footer i[class*="fa-frog"] {
     footer ul {
         /* display: flex; */
         justify-content: space-around;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 30%;
     }
 }
@@ -365,7 +425,12 @@ footer i[class*="fa-frog"] {
     .about-me-section {
         width: 100%;
         text-align: center;
+        border-right: none;
     }
+    /* .about-me-section {
+        border-right: none;
+
+    } */
 
     .hobbies {
         text-align: center;
@@ -380,19 +445,22 @@ footer i[class*="fa-frog"] {
     footer ul {
         /* display: flex; */
         justify-content: space-around;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 35%;
     }
 }
  
 
 @media screen and (max-width: 650px) {
+    .logo {
+        width: 51%;
+    }
     .navlinks {
         display: flex;
         flex-direction: column;
         width: 100%;
         text-align: center;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         padding: 0;
         /* margin-bottom:  */
     }
@@ -402,7 +470,7 @@ footer i[class*="fa-frog"] {
         /* width: 100%; */
         /* margin-right: 9.5rem; */
         margin-bottom: .5rem;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         /* text-align: center; */
     }
 
@@ -413,7 +481,7 @@ footer i[class*="fa-frog"] {
 
     footer ul {
         /* display: flex; */
-        justify-content: space-around;
+        /* justify-content: space-around; */
         border: 1px solid black;
         width: 35%;
     }
