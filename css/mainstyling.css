@@ -232,6 +232,9 @@ footer i[class*="fa-frog"] {
     text-align: center;
 }
 
+/*  
+    card container start
+*/
 .card-cont {
     width: 100%;
     /* background-color: gray; */
@@ -266,7 +269,7 @@ footer i[class*="fa-frog"] {
 /* .img-con a:hover {
     border: 1px solid greenyellow;
 } */
-
+ /* image container */
 .img-con {
     /* border: 1px solid black; */
     /* margin: 0; */
@@ -282,7 +285,7 @@ footer i[class*="fa-frog"] {
     border-top-left-radius: .8rem;
     border-top-right-radius: .8rem;
 }
-
+/* text container */
 .txt-con {
     /* border: 1px solid black; */
     /* margin: auto; */
@@ -369,9 +372,14 @@ footer i[class*="fa-frog"] {
 
 
 
-
+/****************************** 
+    Media Querys Start
+*******************************/
 
 @media screen and (max-width: 1000px) {
+    /***************************** 
+    index page styling
+    ******************************/
     .background-img {
         background-image: none;
         background-color: gray;
@@ -443,6 +451,9 @@ footer i[class*="fa-frog"] {
 }
 
 @media screen and (max-width: 800px) {
+    /***************************** 
+    index page styling
+    ******************************/
     .about-container {
         flex-direction: column;
         margin: auto;
@@ -475,10 +486,16 @@ footer i[class*="fa-frog"] {
         /* border: 1px solid black; */
         width: 35%;
     }
+
+    
 }
  
 
 @media screen and (max-width: 650px) {
+
+    /***************************** 
+    index page styling
+    ******************************/
     .logo {
         width: 51%;
     }
@@ -509,7 +526,38 @@ footer i[class*="fa-frog"] {
     footer ul {
         /* display: flex; */
         /* justify-content: space-around; */
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 35%;
     }
+
+
+    .hobbies {
+        /* padding-left: 5rem; */
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        /* border: 1px solid black; */
+    }
+    .hobbies ul {
+        list-style: none;
+        padding: 0;
+        /* border: 1px solid black; */
+    }
+
+    /***************************** 
+    contact page styling
+    ******************************/
+
+    .contact-cont {
+        flex-direction: column;
+        /* border-right: none; */
+        /* width: 100%; */
+    }
+
+    .contact-cont div {
+        border-right: none;
+        width: 100%;
+    }
+
 }
