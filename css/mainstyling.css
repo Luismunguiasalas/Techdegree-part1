@@ -111,15 +111,18 @@ main {  /* main container styling */
 **************************************/
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
 }
 footer ul {
+    margin: auto;
     width: 20%;
     display: flex;
     list-style: none;
     justify-content: space-between;
-    padding: .5rem;
+}
+footer p {
+    margin: auto;
 }
 footer a {
     text-decoration: none;
