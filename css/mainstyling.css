@@ -1,4 +1,27 @@
 /************************************** 
+    base layout
+**************************************/
+header,
+.navlinks,
+.logo,
+.about-container,
+footer,
+footer ul,
+.card-cont,
+.contact-cont {
+    display: flex;
+}
+
+.header,
+.about-container,
+footer ul {
+    justify-content: space-between;
+
+}
+
+
+
+/************************************** 
     css for header and footer fixed position
 **************************************/
 body {
@@ -18,14 +41,14 @@ body,
     start of nav bar container styling
 **************************************/
 header {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Inria Serif', serif;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* font-family: 'Inria Serif', serif; */
     font-size: 1.3rem;
 }
 /* styling for links list */
 .navlinks {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     width: 40%;
     justify-content: space-evenly;
@@ -42,7 +65,7 @@ header {
     header logo styling
 **************************************/
 .logo {
-    display: flex;
+    /* display: flex; */
     width: 31%;
     justify-content: space-around;
 }
@@ -90,8 +113,8 @@ main {  /* main container styling */
 *************************************/
 .about-container {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     margin-top: 2.5rem;
 }
@@ -110,16 +133,18 @@ main {  /* main container styling */
     footer content styling
 **************************************/
 footer {
-    display: flex;
+    /* display: flex; */
     justify-content: space-evenly;
     text-align: center;
+    padding: .6rem;
 }
 footer ul {
+    /* padding: 1 rem; */
     margin: auto;
     width: 20%;
-    display: flex;
+    /* display: flex; */
     list-style: none;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 footer p {
     margin: auto;
@@ -140,7 +165,7 @@ footer i[class*="fa-frog"] {
 /* card container styling */
 .card-cont {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 2.5rem;
@@ -187,7 +212,7 @@ footer i[class*="fa-frog"] {
 **************************************/
 .contact-cont {
     margin-top: 2.5rem;
-    display: flex;
+    /* display: flex; */
     justify-content: space-evenly;
 }
 .contact-cont div:first-child {
@@ -240,8 +265,6 @@ footer i[class*="fa-frog"] {
         margin: auto;
         width: 100%;
         justify-content: space-evenly;
-
-
     }
     .logo {
         display: flex;
@@ -273,10 +296,10 @@ footer i[class*="fa-frog"] {
         border-right: none;
     }
     .hobbies {
+        width: 100%;
         text-align: center;
     }
     .hobbies ul {
-        list-style: none;
         padding: 0;
     }
     footer ul {
@@ -307,16 +330,6 @@ footer i[class*="fa-frog"] {
     }
     footer ul {
         width: 35%;
-    }
-    .hobbies {
-        width: 100%;
-        text-align: center;
-        list-style: none;
-        padding: 0;
-    }
-    .hobbies ul {
-        list-style: none;
-        padding: 0;
     }
     /***************************** 
     contact page styling
