@@ -334,6 +334,7 @@ footer i[class*="fa-frog"] {
 
 .email-but {
     /* margin: auto; */
+    cursor: pointer;
     background-color: white;
     border: 2px solid greenyellow;
     /* background-color: #008CBA; Green */
