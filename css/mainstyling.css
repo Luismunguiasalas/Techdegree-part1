@@ -110,7 +110,6 @@ main {  /* main container styling */
     footer content styling
 **************************************/
 footer {
-    width: 100%;
     padding: .6rem;
     display: flex;
     justify-content: space-evenly;
