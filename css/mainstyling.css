@@ -59,7 +59,7 @@ main {  /* main container styling */
     flex: 1;
     position: relative;
     overflow-y: auto;
-    margin: auto
+    margin: auto;
 }
 .background-img {
     flex-direction: row;
@@ -70,7 +70,7 @@ main {  /* main container styling */
     margin-bottom: 2.5rem;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("https://i.ibb.co/gz8Z3X6/rsz-1rsz-1rsz-outer-space-stars-l.png")
+    background-image: url("https://i.ibb.co/gz8Z3X6/rsz-1rsz-1rsz-outer-space-stars-l.png");
 }
 .profile-img img {
     display: block;
@@ -110,6 +110,8 @@ main {  /* main container styling */
     footer content styling
 **************************************/
 footer {
+    width: 100%;
+    padding: .6rem;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -240,8 +242,6 @@ footer i[class*="fa-frog"] {
         margin: auto;
         width: 100%;
         justify-content: space-evenly;
-
-
     }
     .logo {
         display: flex;
@@ -254,7 +254,6 @@ footer i[class*="fa-frog"] {
     }
     footer ul {
         justify-content: space-around;
-
         width: 30%;
     }
 }
@@ -273,7 +272,10 @@ footer i[class*="fa-frog"] {
         border-right: none;
     }
     .hobbies {
+        width: 100%;
         text-align: center;
+        list-style: none;
+        padding: 0;
     }
     .hobbies ul {
         list-style: none;
@@ -307,16 +309,6 @@ footer i[class*="fa-frog"] {
     }
     footer ul {
         width: 35%;
-    }
-    .hobbies {
-        width: 100%;
-        text-align: center;
-        list-style: none;
-        padding: 0;
-    }
-    .hobbies ul {
-        list-style: none;
-        padding: 0;
     }
     /***************************** 
     contact page styling
