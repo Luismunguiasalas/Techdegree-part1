@@ -9,6 +9,7 @@ html,
 body,
 .main-container {
     height: 100%;
+    position: fixed;
 }
 .main-container {
     display: flex;
@@ -18,6 +19,12 @@ body,
     start of nav bar container styling
 **************************************/
 header {
+    width: 100%;
+    /* background-color: white;
+    top: 0;
+    z-index: 100;
+    position: fixed; */
+    margin-top: -.5rem;
     display: flex;
     justify-content: space-between;
     font-family: 'Inria Serif', serif;
@@ -110,6 +117,12 @@ main {  /* main container styling */
     footer content styling
 **************************************/
 footer {
+    /* width: 100%;
+    background-color: white;
+    bottom: 0;
+    z-index: 100;
+    position: fixed; */
+    margin-bottom: .5rem;
     padding: .6rem;
     display: flex;
     justify-content: space-evenly;
@@ -148,8 +161,8 @@ footer i[class*="fa-frog"] {
 }
 .card-cont > div { 
     margin-bottom: 2.5rem;
-    height: 25rem;
-    width: 25rem;
+    height: 24rem;
+    width: 24rem;
     overflow: inherit;
     box-shadow: 15px 15px 30px gray;
     border-radius: .8rem;
@@ -224,7 +237,7 @@ footer i[class*="fa-frog"] {
 /****************************** 
     Media Querys Start
 *******************************/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
     /***************************** 
     index page styling
     ******************************/
@@ -233,13 +246,18 @@ footer i[class*="fa-frog"] {
         background-color: gray;
     }
     header {
-        width: 100%;
+        /* padding-right: 3rem; */
+        text-align: center;
+        width: 90%;
         margin: auto;
         flex-direction: column;
+        /* border: 1px solid black; */
     }
     .navlinks {
+        /* margin-left: -10rem; */
+        /* border: 1px solid black; */
         margin: auto;
-        width: 100%;
+        width: 93%;
         justify-content: space-evenly;
     }
     .logo {
@@ -249,6 +267,26 @@ footer i[class*="fa-frog"] {
         margin: auto;
     }
     .logo p {
+        text-align: center;
+    }
+    .card-cont > div { 
+        margin-bottom: 2.5rem;
+        height: auto;
+        width: 20rem;
+        overflow: inherit;
+        box-shadow: 15px 15px 30px gray;
+        border-radius: .8rem;
+        transition-duration: .3s;
+    }
+    .card-cont > div:hover {
+        border-bottom: 3px solid greenyellow;
+        transform: none;
+    }
+    .txt-con {
+        margin-top: .2rem;
+        font-size: small;
+        height: auto;
+        width: 100%;
         text-align: center;
     }
     footer ul {
@@ -279,6 +317,19 @@ footer i[class*="fa-frog"] {
     .hobbies ul {
         list-style: none;
         padding: 0;
+    }
+    .card-cont > div { 
+        margin-bottom: 2.5rem;
+        height: auto;
+        width: 15rem;
+        overflow: inherit;
+        box-shadow: 15px 15px 30px gray;
+        border-radius: .8rem;
+        transition-duration: .3s;
+    }
+    .card-cont > div:hover {
+        border-bottom: 3px solid greenyellow;
+        transform: none;
     }
     footer ul {
         justify-content: space-around;
