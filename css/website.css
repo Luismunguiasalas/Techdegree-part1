@@ -1,0 +1,368 @@
+html,
+body {
+  overflow: hidden;
+  font-family: 'Inria Serif', serif;
+}
+
+html .main-container,
+body .main-container {
+  height: 100%;
+  position: fixed;
+}
+
+html .main-container,
+body .main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  position: relative;
+  overflow-y: auto;
+  margin: auto;
+  flex: 1;
+  width: 90%;
+}
+
+.background-img {
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: black solid 1px;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  background-image: url("https://i.ibb.co/gz8Z3X6/rsz-1rsz-1rsz-outer-space-stars-l.png");
+}
+
+.background-img h1 {
+  color: greenyellow;
+  text-align: center;
+}
+
+.profile-img img {
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+  height: 12rem;
+  width: 12rem;
+  border: greenyellow solid 2px;
+  border-radius: 7rem;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.about-container .about-me-section {
+  width: 65%;
+  border-right: solid 1px greenyellow;
+}
+
+.about-container .text-container {
+  width: 95%;
+}
+
+.about-container .hobbies {
+  margin-right: 3rem;
+  flex-basis: 25%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Inria Serif', serif;
+  margin-top: -.5rem;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+header .navlinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 40%;
+}
+
+header .navlinks a {
+  color: black;
+  text-decoration: none;
+}
+
+header .navlinks a:hover {
+  border-bottom: 2px solid greenyellow;
+}
+
+header .logo {
+  display: flex;
+  justify-content: space-around;
+  width: 31%;
+}
+
+header .logo a {
+  margin: auto;
+  text-decoration: none;
+  color: greenyellow;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: .5rem;
+  padding: .6rem;
+}
+
+footer ul {
+  margin: auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 20%;
+}
+
+footer p {
+  margin: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer i[class*="fa-frog"] {
+  color: greenyellow;
+}
+
+.head-align h1 {
+  text-align: center;
+}
+
+/* card container styling */
+.card-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.card-cont > div {
+  overflow: inherit;
+  margin-bottom: 2.5rem;
+  height: 24rem;
+  width: 24rem;
+  box-shadow: 15px 15px 30px gray;
+  border-radius: .8rem;
+  transition-duration: .3s;
+}
+
+.card-cont > div:hover {
+  border-bottom: 3px solid greenyellow;
+  transform: scale(1.05);
+}
+
+/* image container */
+.img-con {
+  height: 70%;
+  background-color: gray;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+}
+
+.img-con img {
+  height: auto;
+  width: 100%;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+}
+
+/* text container */
+.txt-con {
+  text-align: center;
+  height: 30%;
+  width: 100%;
+}
+
+.txt-con p {
+  margin: auto;
+  padding-top: .5rem;
+  width: 90%;
+}
+
+/************************************* 
+    Contact page styling
+**************************************/
+.contact-cont {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+}
+
+.contact-cont div:first-child {
+  border-right: solid 1px greenyellow;
+  padding-right: 2rem;
+}
+
+.contact-cont div {
+  width: 45%;
+}
+
+.contact-cont:nth-last-child(1) {
+  text-align: center;
+}
+
+.email-but {
+  cursor: pointer;
+  text-align: center;
+  background-color: white;
+  border: 2px solid greenyellow;
+  color: black;
+  padding: .9rem 1.5rem;
+  font-size: 16px;
+  border-radius: .5rem;
+  transition-duration: 0.4s;
+}
+
+.email-but:hover {
+  background-color: greenyellow;
+  transform: scale(1.1);
+}
+
+.email-but a {
+  margin: auto;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1020px) {
+  .background-img {
+    background-image: none;
+    background-color: gray;
+  }
+  header {
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+  }
+  .navlinks {
+    margin: auto;
+    justify-content: space-evenly;
+    width: 93%;
+  }
+  .logo {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .logo p {
+    text-align: center;
+  }
+  .txt-con {
+    height: auto;
+    text-align: center;
+    font-size: small;
+    width: 100%;
+    margin-top: .2rem;
+  }
+  footer ul {
+    justify-content: space-around;
+    width: 30%;
+  }
+  .card-cont > div {
+    height: auto;
+    overflow: inherit;
+    margin-bottom: 2.5rem;
+    width: 20rem;
+    box-shadow: 15px 15px 30px gray;
+    border-radius: .8rem;
+    transition-duration: .3s;
+  }
+  .card-cont > div > div:hover {
+    border-bottom: 3px solid greenyellow;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navlinks {
+    /* margin-left: -10rem; */
+    border: 1px solid black;
+    margin: auto;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .about-container {
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-me-section {
+    text-align: center;
+    border-right: none;
+    width: 100%;
+  }
+  .hobbies {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+  }
+  .hobbies ul {
+    list-style: none;
+    padding: 0;
+  }
+  footer ul {
+    justify-content: space-around;
+    width: 35%;
+  }
+  .card-cont > div {
+    width: 15rem;
+    height: auto;
+    overflow: inherit;
+    margin-bottom: 2.5rem;
+    box-shadow: 15px 15px 30px gray;
+    border-radius: .8rem;
+    transition-duration: .3s;
+  }
+  .card-cont > div > div:hover {
+    border-bottom: 3px solid greenyellow;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .logo {
+    width: 51%;
+  }
+  .navlinks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+  .navlinks li {
+    margin-bottom: .5rem;
+  }
+  .background-img {
+    background-image: none;
+    background-color: gray;
+  }
+  footer ul {
+    width: 35%;
+  }
+  .contact-cont {
+    flex-direction: column;
+  }
+  .contact-cont div {
+    border-right: none;
+    width: 100%;
+  }
+}

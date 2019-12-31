@@ -53,6 +53,13 @@
 }
 @media screen and (max-width: 800px) {
     //index page styling
+    .navlinks {
+        /* margin-left: -10rem; */
+        border: 1px solid black;
+        margin: auto;
+        width: 100%;
+        justify-content: space-evenly;
+    }
     .about-container {
         margin: auto;
         flex-direction: column;
@@ -92,8 +99,7 @@
     }
 }
 @media screen and (max-width: 650px) {
-    index page styling
-    ******************************/
+    // index page styling
     .logo {
         width: 51%;
     }
