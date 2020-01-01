@@ -1,42 +1,90 @@
-html,
+/************************************** 
+    css for header and footer fixed position
+**************************************/
 body {
   overflow: hidden;
   font-family: 'Inria Serif', serif;
 }
 
-html .main-container,
-body .main-container {
+html,
+body,
+.main-container {
   height: 100%;
   position: fixed;
 }
 
-html .main-container,
-body .main-container {
+html,
+body,
+.main-container {
   display: flex;
   flex-direction: column;
 }
 
+/************************************** 
+    start of nav bar container styling
+**************************************/
+header {
+  width: 100%;
+  margin-top: -.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Inria Serif', serif;
+  font-size: 1.3rem;
+}
+
+/* styling for links list */
+.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.navlinks a {
+  color: black;
+  text-decoration: none;
+}
+
+.navlinks a:hover {
+  border-bottom: 2px solid greenyellow;
+}
+
+/************************************** 
+    header logo styling
+**************************************/
+.logo {
+  display: flex;
+  width: 31%;
+  justify-content: space-around;
+}
+
+.logo a {
+  margin: auto;
+  text-decoration: none;
+  color: greenyellow;
+}
+
+/************************************** 
+    main content styling
+**************************************/
 main {
+  /* main container styling */
+  width: 90%;
+  flex: 1;
   position: relative;
   overflow-y: auto;
   margin: auto;
-  flex: 1;
-  width: 90%;
 }
 
 .background-img {
-  height: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
   border: black solid 1px;
   width: 100%;
+  height: auto;
   margin-bottom: 2.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url("https://i.ibb.co/gz8Z3X6/rsz-1rsz-1rsz-outer-space-stars-l.png");
-}
-
-.background-img h1 {
-  color: greenyellow;
-  text-align: center;
 }
 
 .profile-img img {
@@ -49,80 +97,53 @@ main {
   border-radius: 7rem;
 }
 
+.background-img h1 {
+  color: greenyellow;
+  text-align: center;
+}
+
+/************************************* 
+    About me container styling
+*************************************/
 .about-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
   margin-top: 2.5rem;
 }
 
-.about-container .about-me-section {
+.about-me-section {
   width: 65%;
   border-right: solid 1px greenyellow;
 }
 
-.about-container .text-container {
+.text-container {
   width: 95%;
 }
 
-.about-container .hobbies {
+.hobbies {
   margin-right: 3rem;
   flex-basis: 25%;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Inria Serif', serif;
-  margin-top: -.5rem;
-  width: 100%;
-  font-size: 1.3rem;
-}
-
-header .navlinks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  list-style: none;
-  width: 40%;
-}
-
-header .navlinks a {
-  color: black;
-  text-decoration: none;
-}
-
-header .navlinks a:hover {
-  border-bottom: 2px solid greenyellow;
-}
-
-header .logo {
-  display: flex;
-  justify-content: space-around;
-  width: 31%;
-}
-
-header .logo a {
-  margin: auto;
-  text-decoration: none;
-  color: greenyellow;
-}
-
+/************************************* 
+    footer content styling
+**************************************/
 footer {
+  margin-bottom: .5rem;
+  padding: .6rem;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  margin-bottom: .5rem;
-  padding: .6rem;
 }
 
 footer ul {
   margin: auto;
+  width: 20%;
   display: flex;
   list-style: none;
   justify-content: space-between;
-  width: 20%;
 }
 
 footer p {
@@ -138,24 +159,27 @@ footer i[class*="fa-frog"] {
   color: greenyellow;
 }
 
+/************************************* 
+    Experience page styling
+**************************************/
 .head-align h1 {
   text-align: center;
 }
 
 /* card container styling */
 .card-cont {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
   margin-top: 2.5rem;
 }
 
 .card-cont > div {
-  overflow: inherit;
   margin-bottom: 2.5rem;
   height: 24rem;
   width: 24rem;
+  overflow: inherit;
   box-shadow: 15px 15px 30px gray;
   border-radius: .8rem;
   transition-duration: .3s;
@@ -175,22 +199,22 @@ footer i[class*="fa-frog"] {
 }
 
 .img-con img {
-  height: auto;
   width: 100%;
+  height: auto;
   border-top-left-radius: .8rem;
   border-top-right-radius: .8rem;
 }
 
 /* text container */
 .txt-con {
-  text-align: center;
   height: 30%;
   width: 100%;
+  text-align: center;
 }
 
 .txt-con p {
-  margin: auto;
   padding-top: .5rem;
+  margin: auto;
   width: 90%;
 }
 
@@ -198,9 +222,9 @@ footer i[class*="fa-frog"] {
     Contact page styling
 **************************************/
 .contact-cont {
+  margin-top: 2.5rem;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 2.5rem;
 }
 
 .contact-cont div:first-child {
@@ -208,21 +232,21 @@ footer i[class*="fa-frog"] {
   padding-right: 2rem;
 }
 
-.contact-cont div {
-  width: 45%;
-}
-
 .contact-cont:nth-last-child(1) {
   text-align: center;
 }
 
+.contact-cont div {
+  width: 45%;
+}
+
 .email-but {
   cursor: pointer;
-  text-align: center;
   background-color: white;
   border: 2px solid greenyellow;
   color: black;
   padding: .9rem 1.5rem;
+  text-align: center;
   font-size: 16px;
   border-radius: .5rem;
   transition-duration: 0.4s;
@@ -239,94 +263,91 @@ footer i[class*="fa-frog"] {
   color: black;
 }
 
+/****************************** 
+    Media Querys Start
+*******************************/
 @media screen and (max-width: 1020px) {
+  /***************************** 
+    index page styling
+    ******************************/
   .background-img {
     background-image: none;
     background-color: gray;
   }
   header {
-    margin: auto;
-    flex-direction: column;
     text-align: center;
     width: 90%;
+    margin: auto;
+    flex-direction: column;
   }
   .navlinks {
     margin: auto;
-    justify-content: space-evenly;
     width: 93%;
+    justify-content: space-evenly;
   }
   .logo {
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+    margin: auto;
   }
   .logo p {
     text-align: center;
   }
-  .txt-con {
-    height: auto;
-    text-align: center;
-    font-size: small;
-    width: 100%;
-    margin-top: .2rem;
-  }
-  footer ul {
-    justify-content: space-around;
-    width: 30%;
-  }
   .card-cont > div {
-    height: auto;
-    overflow: inherit;
     margin-bottom: 2.5rem;
+    height: auto;
     width: 20rem;
+    overflow: inherit;
     box-shadow: 15px 15px 30px gray;
     border-radius: .8rem;
     transition-duration: .3s;
   }
   .card-cont > div > div:hover {
     border-bottom: 3px solid greenyellow;
-    transform: none;
+  }
+  .txt-con {
+    margin-top: .2rem;
+    font-size: small;
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  footer ul {
+    justify-content: space-around;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .navlinks {
-    /* margin-left: -10rem; */
-    border: 1px solid black;
-    margin: auto;
-    width: 100%;
-    justify-content: space-evenly;
-  }
+  /***************************** 
+    index page styling
+    ******************************/
   .about-container {
-    margin: auto;
     flex-direction: column;
+    margin: auto;
     justify-content: center;
   }
   .about-me-section {
+    width: 100%;
     text-align: center;
     border-right: none;
-    width: 100%;
   }
   .hobbies {
+    width: 100%;
     text-align: center;
     list-style: none;
-    width: 100%;
     padding: 0;
   }
   .hobbies ul {
     list-style: none;
     padding: 0;
   }
-  footer ul {
-    justify-content: space-around;
-    width: 35%;
-  }
   .card-cont > div {
-    width: 15rem;
-    height: auto;
-    overflow: inherit;
     margin-bottom: 2.5rem;
+    height: auto;
+    width: 15rem;
+    overflow: inherit;
     box-shadow: 15px 15px 30px gray;
     border-radius: .8rem;
     transition-duration: .3s;
@@ -335,17 +356,24 @@ footer i[class*="fa-frog"] {
     border-bottom: 3px solid greenyellow;
     transform: none;
   }
+  footer ul {
+    justify-content: space-around;
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 650px) {
+  /***************************** 
+    index page styling
+    ******************************/
   .logo {
     width: 51%;
   }
   .navlinks {
     display: flex;
     flex-direction: column;
-    text-align: center;
     width: 100%;
+    text-align: center;
     padding: 0;
   }
   .navlinks li {
@@ -358,6 +386,9 @@ footer i[class*="fa-frog"] {
   footer ul {
     width: 35%;
   }
+  /***************************** 
+    contact page styling
+    ******************************/
   .contact-cont {
     flex-direction: column;
   }
