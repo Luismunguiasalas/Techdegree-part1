@@ -1,0 +1,56 @@
+/************************************** 
+    css for header and footer fixed position
+**************************************/
+body {
+    overflow: hidden;
+    font-family: 'Inria Serif', serif;
+}
+html,
+body,
+.main-container {
+    height: 100%;
+    position: fixed;
+    & {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/************************************** 
+    start of nav bar container styling
+**************************************/
+header {
+    width: 100%;
+    margin-top: -.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inria Serif', serif;
+    font-size: 1.3rem;
+}
+/* styling for links list */
+.navlinks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: space-evenly;
+    list-style: none;
+    & a {
+        color: black;
+        text-decoration: none;
+    }
+    & a:hover {
+        border-bottom: 2px solid greenyellow;
+    }
+}
+/************************************** 
+    header logo styling
+**************************************/
+.logo {
+    display: flex;
+    width: 31%;
+    justify-content: space-around;
+    & a {
+        margin: auto;
+        text-decoration: none;
+        color: greenyellow;
+    }
+}

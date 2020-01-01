@@ -1,2 +1,3 @@
 # Techdegree-part1
- Create a profile page with html and css
+ Create a responsive profile page with html, css and sass.
+

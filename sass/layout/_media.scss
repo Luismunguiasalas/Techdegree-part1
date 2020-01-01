@@ -1,0 +1,133 @@
+/****************************** 
+    Media Querys Start
+*******************************/
+@media screen and (max-width: 1020px) {
+    /***************************** 
+    index page styling
+    ******************************/
+    .background-img {
+        background-image: none;
+        background-color: gray;
+    }
+    header {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .navlinks {
+        margin: auto;
+        width: 93%;
+        justify-content: space-evenly;
+    }
+    .logo {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        margin: auto;
+        & p {
+            text-align: center;
+        }
+    }
+    .card-cont > div { 
+        margin-bottom: 2.5rem;
+        height: auto;
+        width: 20rem;
+        overflow: inherit;
+        box-shadow: 15px 15px 30px gray;
+        border-radius: .8rem;
+        transition-duration: .3s;
+        & > div:hover {
+            border-bottom: 3px solid greenyellow;
+        }
+          
+    }
+    .txt-con {
+        margin-top: .2rem;
+        font-size: small;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+    footer ul {
+        justify-content: space-around;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 800px) {
+    /***************************** 
+    index page styling
+    ******************************/
+    .about-container {
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+    }
+    .about-me-section {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+    }
+    .hobbies {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        & ul {
+            list-style: none;
+            padding: 0;
+        }
+    }
+    .card-cont > div { 
+        margin-bottom: 2.5rem;
+        height: auto;
+        width: 15rem;
+        overflow: inherit;
+        box-shadow: 15px 15px 30px gray;
+        border-radius: .8rem;
+        transition-duration: .3s;
+        & > div:hover {
+            border-bottom: 3px solid greenyellow;
+            transform: none;
+        }
+    }
+    footer ul {
+        justify-content: space-around;
+        width: 35%;
+    }
+}
+@media screen and (max-width: 650px) {
+    /***************************** 
+    index page styling
+    ******************************/
+    .logo {
+        width: 51%;
+    }
+    .navlinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        & li {
+            margin-bottom: .5rem;
+        }
+    }
+    .background-img {
+        background-image: none;
+        background-color: gray;
+    }
+    footer ul {
+        width: 35%;
+    }
+    /***************************** 
+    contact page styling
+    ******************************/
+    .contact-cont {
+        flex-direction: column;
+        & div {
+            border-right: none;
+            width: 100%;
+        }
+    }
+}
