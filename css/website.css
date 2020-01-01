@@ -1,1 +1,399 @@
-body{overflow:hidden;font-family:'Inria Serif', serif}html,body,.main-container{height:100%;position:fixed}html,body,.main-container{display:flex;flex-direction:column}header{width:100%;margin-top:-.5rem;display:flex;justify-content:space-between;font-family:'Inria Serif', serif;font-size:1.3rem}.navlinks{display:flex;flex-wrap:wrap;width:40%;justify-content:space-evenly;list-style:none}.navlinks a{color:black;text-decoration:none}.navlinks a:hover{border-bottom:2px solid greenyellow}.logo{display:flex;width:31%;justify-content:space-around}.logo a{margin:auto;text-decoration:none;color:greenyellow}main{width:90%;flex:1;position:relative;overflow-y:auto;margin:auto}.background-img{border:black solid 1px;width:100%;height:auto;margin-bottom:2.5rem;background-size:cover;background-repeat:no-repeat;background-image:url("https://i.ibb.co/gz8Z3X6/rsz-1rsz-1rsz-outer-space-stars-l.png")}.profile-img img{display:block;margin:auto;margin-top:5rem;height:12rem;width:12rem;border:greenyellow solid 2px;border-radius:7rem}.background-img h1{color:greenyellow;text-align:center}.about-container{width:100%;display:flex;justify-content:space-between;flex-wrap:wrap;margin-top:2.5rem}.about-me-section{width:65%;border-right:solid 1px greenyellow}.text-container{width:95%}.hobbies{margin-right:3rem;flex-basis:25%}footer{margin-bottom:.5rem;padding:.6rem;display:flex;justify-content:space-evenly;text-align:center}footer ul{margin:auto;width:20%;display:flex;list-style:none;justify-content:space-between}footer p{margin:auto}footer a{text-decoration:none;color:black}footer i[class*="fa-frog"]{color:greenyellow}.head-align h1{text-align:center}.card-cont{width:100%;display:flex;flex-wrap:wrap;justify-content:space-around;margin-top:2.5rem}.card-cont>div{margin-bottom:2.5rem;height:24rem;width:24rem;overflow:inherit;box-shadow:15px 15px 30px gray;border-radius:.8rem;transition-duration:.3s}.card-cont>div:hover{border-bottom:3px solid greenyellow;transform:scale(1.05)}.img-con{height:70%;background-color:gray;border-top-left-radius:.8rem;border-top-right-radius:.8rem}.img-con img{width:100%;height:auto;border-top-left-radius:.8rem;border-top-right-radius:.8rem}.txt-con{height:30%;width:100%;text-align:center}.txt-con p{padding-top:.5rem;margin:auto;width:90%}.contact-cont{margin-top:2.5rem;display:flex;justify-content:space-evenly}.contact-cont div:first-child{border-right:solid 1px greenyellow;padding-right:2rem}.contact-cont:nth-last-child(1){text-align:center}.contact-cont div{width:45%}.email-but{cursor:pointer;background-color:white;border:2px solid greenyellow;color:black;padding:.9rem 1.5rem;text-align:center;font-size:16px;border-radius:.5rem;transition-duration:0.4s}.email-but:hover{background-color:greenyellow;transform:scale(1.1)}.email-but a{margin:auto;text-decoration:none;color:black}@media screen and (max-width: 1020px){.background-img{background-image:none;background-color:gray}header{text-align:center;width:90%;margin:auto;flex-direction:column}.navlinks{margin:auto;width:93%;justify-content:space-evenly}.logo{display:flex;flex-wrap:wrap;width:50%;margin:auto}.logo p{text-align:center}.card-cont>div{margin-bottom:2.5rem;height:auto;width:20rem;overflow:inherit;box-shadow:15px 15px 30px gray;border-radius:.8rem;transition-duration:.3s}.card-cont>div>div:hover{border-bottom:3px solid greenyellow}.txt-con{margin-top:.2rem;font-size:small;height:auto;width:100%;text-align:center}footer ul{justify-content:space-around;width:30%}}@media screen and (max-width: 800px){.about-container{flex-direction:column;margin:auto;justify-content:center}.about-me-section{width:100%;text-align:center;border-right:none}.hobbies{width:100%;text-align:center;list-style:none;padding:0}.hobbies ul{list-style:none;padding:0}.card-cont>div{margin-bottom:2.5rem;height:auto;width:15rem;overflow:inherit;box-shadow:15px 15px 30px gray;border-radius:.8rem;transition-duration:.3s}.card-cont>div>div:hover{border-bottom:3px solid greenyellow;transform:none}footer ul{justify-content:space-around;width:35%}}@media screen and (max-width: 650px){.logo{width:51%}.navlinks{display:flex;flex-direction:column;width:100%;text-align:center;padding:0}.navlinks li{margin-bottom:.5rem}.background-img{background-image:none;background-color:gray}footer ul{width:35%}.contact-cont{flex-direction:column}.contact-cont div{border-right:none;width:100%}}
+/************************************** 
+    css for header and footer fixed position
+**************************************/
+body {
+  overflow: hidden;
+  font-family: 'Inria Serif', serif;
+}
+
+html,
+body,
+.main-container {
+  height: 100%;
+  position: fixed;
+}
+
+html,
+body,
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/************************************** 
+    start of nav bar container styling
+**************************************/
+header {
+  width: 100%;
+  margin-top: -.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Inria Serif', serif;
+  font-size: 1.3rem;
+}
+
+/* styling for links list */
+.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.navlinks a {
+  color: black;
+  text-decoration: none;
+}
+
+.navlinks a:hover {
+  border-bottom: 2px solid greenyellow;
+}
+
+/************************************** 
+    header logo styling
+**************************************/
+.logo {
+  display: flex;
+  width: 31%;
+  justify-content: space-around;
+}
+
+.logo a {
+  margin: auto;
+  text-decoration: none;
+  color: greenyellow;
+}
+
+/************************************** 
+    main content styling
+**************************************/
+main {
+  /* main container styling */
+  width: 90%;
+  flex: 1;
+  position: relative;
+  overflow-y: auto;
+  margin: auto;
+}
+
+.background-img {
+  border: black solid 1px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://i.ibb.co/gz8Z3X6/rsz-1rsz-1rsz-outer-space-stars-l.png");
+}
+
+.profile-img img {
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+  height: 12rem;
+  width: 12rem;
+  border: greenyellow solid 2px;
+  border-radius: 7rem;
+}
+
+.background-img h1 {
+  color: greenyellow;
+  text-align: center;
+}
+
+/************************************* 
+    About me container styling
+*************************************/
+.about-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.about-me-section {
+  width: 65%;
+  border-right: solid 1px greenyellow;
+}
+
+.text-container {
+  width: 95%;
+}
+
+.hobbies {
+  margin-right: 3rem;
+  flex-basis: 25%;
+}
+
+/************************************* 
+    footer content styling
+**************************************/
+footer {
+  margin-bottom: .5rem;
+  padding: .6rem;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+footer ul {
+  margin: auto;
+  width: 20%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+footer p {
+  margin: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer i[class*="fa-frog"] {
+  color: greenyellow;
+}
+
+/************************************* 
+    Experience page styling
+**************************************/
+.head-align h1 {
+  text-align: center;
+}
+
+/* card container styling */
+.card-cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2.5rem;
+}
+
+.card-cont > div {
+  margin-bottom: 2.5rem;
+  height: 24rem;
+  width: 24rem;
+  overflow: inherit;
+  box-shadow: 15px 15px 30px gray;
+  border-radius: .8rem;
+  transition-duration: .3s;
+}
+
+.card-cont > div:hover {
+  border-bottom: 3px solid greenyellow;
+  transform: scale(1.05);
+}
+
+/* image container */
+.img-con {
+  height: 70%;
+  background-color: gray;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+}
+
+.img-con img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+}
+
+/* text container */
+.txt-con {
+  height: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+.txt-con p {
+  padding-top: .5rem;
+  margin: auto;
+  width: 90%;
+}
+
+/************************************* 
+    Contact page styling
+**************************************/
+.contact-cont {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-cont div:first-child {
+  border-right: solid 1px greenyellow;
+  padding-right: 2rem;
+}
+
+.contact-cont:nth-last-child(1) {
+  text-align: center;
+}
+
+.contact-cont div {
+  width: 45%;
+}
+
+.email-but {
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid greenyellow;
+  color: black;
+  padding: .9rem 1.5rem;
+  text-align: center;
+  font-size: 16px;
+  border-radius: .5rem;
+  transition-duration: 0.4s;
+}
+
+.email-but:hover {
+  background-color: greenyellow;
+  transform: scale(1.1);
+}
+
+.email-but a {
+  margin: auto;
+  text-decoration: none;
+  color: black;
+}
+
+/****************************** 
+    Media Querys Start
+*******************************/
+@media screen and (max-width: 1020px) {
+  /***************************** 
+    index page styling
+    ******************************/
+  .background-img {
+    background-image: none;
+    background-color: gray;
+  }
+  header {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+  }
+  .navlinks {
+    margin: auto;
+    width: 93%;
+    justify-content: space-evenly;
+  }
+  .logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+  }
+  .logo p {
+    text-align: center;
+  }
+  .card-cont > div {
+    margin-bottom: 2.5rem;
+    height: auto;
+    width: 20rem;
+    overflow: inherit;
+    box-shadow: 15px 15px 30px gray;
+    border-radius: .8rem;
+    transition-duration: .3s;
+  }
+  .card-cont > div > div:hover {
+    border-bottom: 3px solid greenyellow;
+  }
+  .txt-con {
+    margin-top: .2rem;
+    font-size: small;
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  footer ul {
+    justify-content: space-around;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /***************************** 
+    index page styling
+    ******************************/
+  .about-container {
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+  }
+  .about-me-section {
+    width: 100%;
+    text-align: center;
+    border-right: none;
+  }
+  .hobbies {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+  }
+  .hobbies ul {
+    list-style: none;
+    padding: 0;
+  }
+  .card-cont > div {
+    margin-bottom: 2.5rem;
+    height: auto;
+    width: 15rem;
+    overflow: inherit;
+    box-shadow: 15px 15px 30px gray;
+    border-radius: .8rem;
+    transition-duration: .3s;
+  }
+  .card-cont > div > div:hover {
+    border-bottom: 3px solid greenyellow;
+    transform: none;
+  }
+  footer ul {
+    justify-content: space-around;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /***************************** 
+    index page styling
+    ******************************/
+  .logo {
+    width: 51%;
+  }
+  .navlinks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .navlinks li {
+    margin-bottom: .5rem;
+  }
+  .background-img {
+    background-image: none;
+    background-color: gray;
+  }
+  footer ul {
+    width: 35%;
+  }
+  /***************************** 
+    contact page styling
+    ******************************/
+  .contact-cont {
+    flex-direction: column;
+  }
+  .contact-cont div {
+    border-right: none;
+    width: 100%;
+  }
+}
